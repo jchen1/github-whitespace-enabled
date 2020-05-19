@@ -1,0 +1,15 @@
+{
+  "name": "Ignore Whitespace in GitHub",
+  "version": "0.1",
+  "description": "Automatically sets 'Ignore Whitespace' when viewing diffs in GitHub",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*"
+      ],
+      "run_at": "document_start",
+      "js": ["ignoreWhitespace.js"]
+    }
+  ]
+}
